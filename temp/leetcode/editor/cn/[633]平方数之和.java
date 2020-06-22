@@ -19,7 +19,7 @@
 // Related Topics 数学
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution633 {
     public boolean judgeSquareSum(int c) {
         int i = 0;
         int j = (int) Math.sqrt(c);//j的上限

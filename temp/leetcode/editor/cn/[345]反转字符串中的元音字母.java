@@ -18,7 +18,7 @@
 import java.util.*;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution345 {
 
     //快速判断 一个字符是否是元音字符 加入到 Hash集合中判断 O(1)
     public static Set<Character> set = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'));

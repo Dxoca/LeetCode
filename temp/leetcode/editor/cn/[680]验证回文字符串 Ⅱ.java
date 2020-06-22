@@ -23,7 +23,7 @@
 // Related Topics 字符串
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution680 {
     public boolean validPalindrome(String s) {
         char[] str = s.toCharArray();
         for (int i = 0, j = s.length() - 1; i < j; i++, j--) {

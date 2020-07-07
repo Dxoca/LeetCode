@@ -26,32 +26,20 @@
 // Related Topics 数组 双指针
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution977 {
     public int[] sortedSquares(int[] A) {
         int[] B = new int[A.length];
         int i = 0, j = A.length - 1;
         int k = j;//B索引
-        while (i <= j) {
-            if (Math.abs(A[i]) > Math.abs(A[j])) {
-                B[k]=A[i]*
+        while (i <= j) {//指正重合 结束
+            if (Math.abs(A[i]) > Math.abs(A[j])) {//比较绝对值 最大的在最后面
+                B[k--] = A[i] * A[i];
+                i++;
+            } else {
+                B[k--] = A[j] * A[j];
+                j--;
             }
         }
-//        for (i = 0; i < A.length; i++) {
-//            if (A[i] > 0) {
-//                j = i++;
-//                break;
-//            }
-//        }
-//        int k = 0;
-//        while (i >= 0 && j < A.length && k < A.length) {
-//            if (A[i] * A[i] > A[j] * A[j]) {//j小
-//                B[k++] = A[j] * A[j];
-//                j++;
-//            } else {
-//                B[k++] = A[i] * A[i];
-//                i--;
-//            }
-//        }
         return B;
     }
 }

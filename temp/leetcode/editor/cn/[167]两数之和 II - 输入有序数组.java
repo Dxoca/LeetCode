@@ -17,11 +17,22 @@
 // Related Topics 数组 双指针 二分查找 
 // 👍 322 👎 0
 
+import java.util.HashMap;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution167 {
     public int[] twoSum(int[] numbers, int target) {
-
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int[] ans = new int[2];
+        for (int i = 0; i < numbers.length; i++) {
+            int dif = target - numbers[i];//差值
+            if (map.get(dif) != null) {//存在这个数字
+                ans[0] = map.get(dif) + 1;
+                ans[1] = i + 1;
+            }
+            map.put(numbers[i], i);//数值和i
+        }
+        return ans;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

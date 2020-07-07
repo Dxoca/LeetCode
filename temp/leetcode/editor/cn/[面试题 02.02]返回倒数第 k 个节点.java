@@ -22,7 +22,7 @@
  * ListNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution_面试02_02 {
     public int kthToLast(ListNode head, int k) {
         ListNode pre = new ListNode(0);
         pre.next = head;
@@ -34,7 +34,7 @@ class Solution {
             s = s.next;
             p = p.next;
         }
-        return p.next.val;
+        return p.next.val;//返回第k个节点
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

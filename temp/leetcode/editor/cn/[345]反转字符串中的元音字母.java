@@ -12,7 +12,7 @@
 //输出: "leotcede" 
 //
 // 说明: 
-//元音字母不包含字母"y"。 
+//元音字母不包含字母"y"。
 // Related Topics 双指针 字符串
 
 import java.util.*;

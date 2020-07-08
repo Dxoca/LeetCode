@@ -20,7 +20,7 @@
 // 👍 252 👎 0
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution344 {
     public void reverseString(char[] s) {
         int i = 0, j = s.length - 1;
         while (i < j) {//指针若重叠 就结束 对称

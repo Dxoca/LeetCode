@@ -17,7 +17,7 @@
 // 👍 245 👎 0
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution125 {
     public boolean isPalindrome(String s) {
         int i = 0, j = s.length() - 1;
         while (i <= j) {

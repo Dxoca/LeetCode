@@ -26,7 +26,7 @@
  * ListNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution234 {
     public boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) return true;
         ListNode fast = head;

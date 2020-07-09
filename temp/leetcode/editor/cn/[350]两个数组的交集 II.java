@@ -33,7 +33,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution350 {
     public int[] intersect(int[] nums1, int[] nums2) {
         //用hashMap记录元素的出现的个数 然后交集取到一个就个数减去1. 0个就删除元素。类比349
         HashMap<Integer, Integer> map = new HashMap<>();

@@ -171,6 +171,22 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/temp/leetcode/editor/cn/[844]比较含退格的字符串.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/temp/leetcode/editor/cn/[844]比较含退格的字符串.java" />
+              <option name="questionId" value="874" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/temp/leetcode/editor/cn/[849]到最近的人的最大距离.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/temp/leetcode/editor/cn/[849]到最近的人的最大距离.java" />
+              <option name="questionId" value="879" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/temp/leetcode/editor/cn/[88]合并两个有序数组.java">
           <value>
             <LeetcodeEditor>
@@ -187,6 +203,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/temp/leetcode/editor/cn/[剑指 Offer 04]二维数组中的查找.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/temp/leetcode/editor/cn/[剑指 Offer 04]二维数组中的查找.java" />
+              <option name="questionId" value="100276" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/temp/leetcode/editor/cn/[面试题 02.02]返回倒数第 k 个节点.java">
           <value>
             <LeetcodeEditor>
@@ -200,6 +224,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/temp/leetcode/editor/cn/[面试题 02.04]分割链表.java" />
               <option name="questionId" value="1000008" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/temp/leetcode/editor/cn/[面试题 10.01]合并排序的数组.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/temp/leetcode/editor/cn/[面试题 10.01]合并排序的数组.java" />
+              <option name="questionId" value="1000012" />
             </LeetcodeEditor>
           </value>
         </entry>

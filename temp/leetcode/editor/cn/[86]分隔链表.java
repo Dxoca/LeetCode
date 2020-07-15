@@ -38,7 +38,7 @@ class Solution {
             p = p.next;
         }
         min.next = p2.next;//小的尾巴指向大的头部 尾插法
-        max.next = null;///对于非空表，将尾结点指针域置空 否则 Error - Found cycle in the ListNode
+        max.next = null;//对于非空表，将尾结点指针域置空 否则 Error - Found cycle in the ListNode
         return p1.next;
     }
 }

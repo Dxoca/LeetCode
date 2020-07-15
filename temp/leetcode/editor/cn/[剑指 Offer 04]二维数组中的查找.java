@@ -37,8 +37,33 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+    // [
+//  [1,   4,  7, 11, 15],
+//  [2,   5,  8, 12, 19],
+//  [3,   6,  9, 16, 22],
+//  [10, 13, 14, 17, 24],
+//  [18, 21, 23, 26, 30]
+//]
     public boolean findNumberIn2DArray(int[][] matrix, int target) {
-
+        //Binary Search Tree O(n) 双百
+        if (matrix == null || matrix.length == 0) return false;
+        int m = matrix.length, n = matrix[0].length;
+        int row = 0, col = n - 1;//从右上角开始 0行 最后一列
+        int t;
+        while (row < m && col >= 0) {
+            t = matrix[row][col];
+            if (t == target) return true;
+            else if (t > target) col--;//往左走小
+            else if (t < target) row++;//往下走大
+        }
+        return false;
+        //暴力 O(n^2)
+//        for (int i = 0; i < matrix.length; i++) {
+//            for (int j = 0; j < matrix[0].length; j++) {
+//                if (matrix[i][j] == target) return true;
+//            }
+//        }
+//        return false;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -54,6 +54,7 @@ class Solution {
         if (name.length() > typed.length()) return false;//输入的比实际的要小
         if (name.charAt(name.length() - 1) != typed.charAt(typed.length() - 1)) return false;//判断最后一位是否一致
         if (name.charAt(0) != typed.charAt(0)) return false;//排除头部不一样 因为下面的else中判断排除了首位
+
         int i = 0, j = 0;
         while (i < name.length() && j < typed.length()) {
             if (name.charAt(i) == typed.charAt(j)) {
@@ -66,7 +67,6 @@ class Solution {
                 j++;
             }
         }
-
         return i == name.length();
     }
 }

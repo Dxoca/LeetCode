@@ -179,6 +179,22 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/temp/leetcode/editor/cn/[82]删除排序链表中的重复元素 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/temp/leetcode/editor/cn/[82]删除排序链表中的重复元素 II.java" />
+              <option name="questionId" value="82" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/temp/leetcode/editor/cn/[83]删除排序链表中的重复元素.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/temp/leetcode/editor/cn/[83]删除排序链表中的重复元素.java" />
+              <option name="questionId" value="83" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/temp/leetcode/editor/cn/[844]比较含退格的字符串.java">
           <value>
             <LeetcodeEditor>
@@ -208,6 +224,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/temp/leetcode/editor/cn/[88]合并两个有序数组.java" />
               <option name="questionId" value="88" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/temp/leetcode/editor/cn/[925]长按键入.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/temp/leetcode/editor/cn/[925]长按键入.java" />
+              <option name="questionId" value="961" />
             </LeetcodeEditor>
           </value>
         </entry>

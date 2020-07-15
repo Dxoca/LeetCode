@@ -21,20 +21,25 @@
  * }
  */
 class Solution {
-    //q节点遍历数据 然后判断到q的值小于x就交换
     public ListNode partition(ListNode head, int x) {
-        ListNode p, q;
-        p = q = head;
-        while (q != null) {
-            if (q.val < x) {//小就发生交换 并对p进行next
-                int t = q.val;
-                q.val = p.val;
-                p.val = t;
-                p = p.next;//游标
+        //维护两条链表，利用尾插法保证相对顺序不变
+        ListNode min = new ListNode(-1);
+        ListNode max = new ListNode(-1);
+        ListNode p = head, p1 = min, p2 = max;//mark 链表的头。
+
+        while (p != null) {
+            if (p.val < x) {
+                min.next = p;
+                min = min.next;
+            } else {
+                max.next = p;
+                max = max.next;
             }
-            q = q.next;
+            p = p.next;
         }
-        return head;
+        min.next = p2.next;//小的尾巴指向大的头部 尾插法
+        max.next = null;///对于非空表，将尾结点指针域置空 否则 Error - Found cycle in the ListNode
+        return p1.next;
     }
 }
 

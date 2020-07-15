@@ -19,6 +19,7 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution125 {
     public boolean isPalindrome(String s) {
+           String makeString(s)
         int i = 0, j = s.length() - 1;
         while (i <= j) {
             char a = s.charAt(i);

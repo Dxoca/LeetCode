@@ -23,7 +23,15 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
-
+        if (matrix.length == 0 || matrix == null) return false;//特判
+        int m = matrix.length, n = matrix[0].length;
+        int row = 0, col = n - 1;
+        while (row < m && col >= 0) {
+            if (matrix[row][col] == target) return true;
+            else if (matrix[row][col] > target) col--;
+            else row++;
+        }
+        return false;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

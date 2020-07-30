@@ -50,6 +50,7 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isLongPressedName(String name, String typed) {
+        //四条特判断
         if (name.equals(typed)) return true;//完全一致
         if (name.length() > typed.length()) return false;//输入的比实际的要小
         if (name.charAt(name.length() - 1) != typed.charAt(typed.length() - 1)) return false;//判断最后一位是否一致
@@ -61,9 +62,8 @@ class Solution {
                 i++;
                 j++;
             } else {
-                if (j > 0 && typed.charAt(j) != typed.charAt(j - 1)) {//既然要以为 那么本位字母一定和前位字母大小一致。
-                    return false;
-                }
+                if (j > 0 && typed.charAt(j) != typed.charAt(j - 1)) //既然要移位 那么本位字母一定和前位字母大小一致。
+                    return false;//不一致就不符合
                 j++;
             }
         }

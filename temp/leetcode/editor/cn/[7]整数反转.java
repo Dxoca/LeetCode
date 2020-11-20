@@ -24,11 +24,23 @@
 // Related Topics 数学 
 // 👍 1996 👎 0
 
+import static java.lang.Math.abs;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public int reverse(int x) {
 
+    public int reverse(int x) {
+        int sign = x > 0 ? 1 : -1;
+        int ans = 0;
+        int f = Math.abs(x);
+        //125
+        while (f > 0) {
+            ans += f % 10;//5 2 1 520
+            f /= 10;
+            ans *= 10;
+        }
+        ans /= 10;
+        return ans * sign > 230 || ans * sign < -231 ? 0 : ans * sign;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

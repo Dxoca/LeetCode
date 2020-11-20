@@ -30,7 +30,7 @@
 
 import javax.swing.tree.TreeNode;
 
-class Solution {
+class Solution114 {
     public class TreeNode {
         int val;
         TreeNode left;

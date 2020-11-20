@@ -25,31 +25,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution66 {
     public int[] plusOne(int[] digits) {
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = digits.length - 1; i >= 0; i--) {
-            list.add(++digits[i]);
-            if (digits[i] == 10) {
-                digits[i] = 0;
-            } else {
-                return digits;
-            }
-        }
-        list.add(0, 1);
-        //把list转换为数组即可
-        return
+//        ArrayList<Integer> list = new ArrayList<>();
 //        for (int i = digits.length - 1; i >= 0; i--) {
-//            if (digits[i] != 9) {
-//                digits[i]++;
+//            list.add(++digits[i]);
+//            if (digits[i] == 10) {
+//                digits[i] = 0;
+//            } else {
 //                return digits;
 //            }
-//            digits[i] = 0;
 //        }
-//        //说明数字全是9
-//        int[] temp = new int[digits.length + 1];
-//        temp[0] = 1;
-//        return temp;
+//        list.add(0, 1);
+//        //把list转换为数组即可
+////        return
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] != 9) {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
+        }
+        //说明数字全是9
+        int[] temp = new int[digits.length + 1];
+        temp[0] = 1;
+        return temp;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -43,11 +43,11 @@
 // Related Topics 数组 双指针
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution26 {
     public int removeDuplicates(int[] nums) {
         int j = 0, i = 0;
         //数组有序
-        while (i < nums.length) {//1,1,1,1
+        while (i < nums.length) {//1,1,1,1s
             while (i > 0 && i < nums.length && nums[i] == nums[i - 1]) i++;//移动到最后一个重复的位置
             if (i < nums.length)//防止最后一个 溢出 可以取倒数第二个
                 nums[j++] = nums[i++];

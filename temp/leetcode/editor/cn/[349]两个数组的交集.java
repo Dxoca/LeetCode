@@ -27,7 +27,7 @@
 import java.util.*;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution349 {
+class Solution{
     public int[] intersection(int[] nums1, int[] nums2) {
         HashMap<Integer, Integer> set = new HashMap<>();//去重 通过标记integer看是否重复取到
         ArrayList<Integer> list = new ArrayList<>();//记录答案
@@ -43,11 +43,12 @@ class Solution349 {
             //如果优化的可以写的简单点 用remove 就不用判断value的值 不可能会重复判断键值了！！ 所以不写了
             if (set.containsKey(nums2[i])) {//判断有没有该键值 很重要。
 
-                value = set.get(nums2[i]);//取出键值
-                if (value == 0) {//第一次
-                    set.put(nums2[i], value + 1);
+//                value = set.get(nums2[i]);//取出键值
+                set.remove(nums2[i]);
+//                if (value == 0) {//第一次
+//                    set.put(nums2[i], value + 1);
                     list.add(nums2[i]);//存入
-                }
+//                }
             }
         }
 

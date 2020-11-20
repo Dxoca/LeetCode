@@ -17,30 +17,27 @@
 // 👍 245 👎 0
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution125 {
+class Solution {
     public boolean isPalindrome(String s) {
-        int i = 0, j = s.length() - 1;
-        while (i <= j) {
-            char a = s.charAt(i);
-            char b = s.charAt(j);
-            if (a >= 'a' && a <= 'z' || a >= 'A' && a <= 'Z') {
-                if (b >= 'a' && b <= 'z' || b >= 'A' && b <= 'Z') {
-                    a = ((a >= 'A' && a <= 'Z') ? (char) (a + 32) : a);
-                    b = ((b >= 'A' && b <= 'Z') ? (char) (b + 32) : b);
-                    if (a != b) {
-                        return false;
-                    } else {
-                        i++;
-                        j--;
-                    }
-                } else {
-                    j--;
+        int n = s.length();
+        int left = 0, right = n - 1;
+        while (left < right) {
+            while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
+                ++left;
+            }
+            while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
+                --right;
+            }
+            if (left < right) {
+                if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
+                    return false;
                 }
-            } else {//不是字母 前移
-                i++;
+                ++left;
+                --right;
             }
         }
         return true;
     }
 }
+
 //leetcode submit region end(Prohibit modification and deletion)

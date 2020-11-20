@@ -2,7 +2,7 @@
 //
 // 示例: 
 //
-// 输入: [0,10,3,12,0]
+// 输入: [0,1,3,12,0]
 //输出: [1,3,12,0,0] 
 //
 // 说明: 
@@ -18,20 +18,34 @@
 class Solution {
     public void moveZeroes(int[] nums) {
         int k = 0;
-        for (int i = nums.length - 1; i >= 0; i--) {
-            if (nums[i] == 0) {
-                for (int j = i; j < nums.length - k - 1; j++) {
-                    swap(nums, j, j + 1);
-                }
-                k++;//0个数 边界缩小
-            }
+        int i = 0;//一定要先判断 边界
+        while (i < nums.length) {
+            while (i < nums.length && nums[i] == 0)
+                i++;
+            if (i < nums.length)
+                nums[k++] = nums[i++];
         }
+        while (k < nums.length)
+            nums[k++] = 0;
+
     }
 
-    public void swap(int[] nums, int i, int j) {
-        int t = nums[i];
-        nums[i] = nums[j];
-        nums[j] = t;
-    }
+//    public void moveZeroes(int[] nums) {
+//        int k = 0;
+//        for (int i = nums.length - 1; i >= 0; i--) {
+//            if (nums[i] == 0) {
+//                for (int j = i; j < nums.length - k - 1; j++) {
+//                    swap(nums, j, j + 1);
+//                }
+//                k++;//0个数 边界缩小
+//            }
+//        }
+//    }
+//
+//    public void swap(int[] nums, int i, int j) {
+//        int t = nums[i];
+//        nums[i] = nums[j];
+//        nums[j] = t;
+//    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
